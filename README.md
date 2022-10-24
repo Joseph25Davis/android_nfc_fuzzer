@@ -1,5 +1,4 @@
-# Android NFC fuzzer
-
+moto g pure
 ## Introduction
 
 This is a fuzzer that uses libprotobuf-mutator to fuzz the NFC module on an Android device. This can be used on supported Google phones such as Pixel3 and Pixel4. It has been tested on Pixel3a. Currently the NFC forum type 2 tag is implemented.
@@ -106,3 +105,4 @@ adb shell
 sargo:/ # ASAN_OPTIONS=detect_container_overflow=0 /data/fuzz/arm64/t2t_detect_fuzzer/t2t_detect_fuzzer /data/fuzz/arm64/t2t_detect_fuzzer/corpus
 ```
 The `detect_container_overflow` option may be required as protobuf is not compiled with asan and will cause `container_overflow` FP when fuzzing.
+diff.
